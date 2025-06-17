@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d48f75c1-8097-4bc9-a4e5-7f62299e818e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Design pattern/tp-design_pattern/src/main/java/org/example/Toy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design pattern/tp-design_pattern/src/main/java/org/example/behavioralObserver/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design pattern/tp-design_pattern/src/main/java/org/example/behavioralObserver/NotifyLutin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design pattern/tp-design_pattern/src/main/java/org/example/behavioralObserver/ProductionLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design pattern/tp-design_pattern/src/main/java/org/example/behavioralObserver/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design pattern/tp-design_pattern/src/main/java/org/example/behavioralObserver/UpdateManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design pattern/tp-design_pattern/src/main/java/org/example/creationalFactory/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design pattern/tp-design_pattern/src/main/java/org/example/creationalFactory/CarFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design pattern/tp-design_pattern/src/main/java/org/example/creationalFactory/Doll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design pattern/tp-design_pattern/src/main/java/org/example/creationalFactory/DollFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design pattern/tp-design_pattern/src/main/java/org/example/creationalFactory/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design pattern/tp-design_pattern/src/main/java/org/example/creationalFactory/Monopoly.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design pattern/tp-design_pattern/src/main/java/org/example/creationalFactory/MonopolyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design pattern/tp-design_pattern/src/main/java/org/example/creationalFactory/ToyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design pattern/tp-design_pattern/src/main/java/org/example/structuralDecorator/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design pattern/tp-design_pattern/src/main/java/org/example/structuralDecorator/PlainToy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design pattern/tp-design_pattern/src/main/java/org/example/structuralDecorator/RibbonDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design pattern/tp-design_pattern/src/main/java/org/example/structuralDecorator/ToyDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design pattern/tp-design_pattern/src/main/java/org/example/structuralDecorator/WrappingDecorator.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Maryambghm2"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Maryambghm2/exo1-jdbc.git",
+    "accountId": "03884717-207c-47a8-9d57-784cdd2bec70"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2xUYouiRRU1xbghdJeikxigtxW7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d48f75c1-8097-4bc9-a4e5-7f62299e818e" name="Changes" comment="" />
+      <created>1747994297544</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747994297544</updated>
+    </task>
+    <servers />
+  </component>
+</project>

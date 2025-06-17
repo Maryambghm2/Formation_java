@@ -1,0 +1,44 @@
+package org.example.demo_spring_base.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.List;
+
+@Controller
+
+public class HelloController {
+
+    @RequestMapping("/")
+    public String sayHello() {
+        System.out.println("Je passe dans la méthode sayHello !!!");
+        return "hello";
+    }
+
+@RequestMapping("/coucou")
+@ResponseBody
+    public List<String> getPersons(){
+        return List.of("Toto", "Tata", "Titi");
+}
+
+@RequestMapping("/home/person")
+    public String personInfos(Model model){
+        model.addAttribute("firstname", "Toto");
+        model.addAttribute("lastname", "Titi");
+        List<String> persons = List.of("Toto", "Tata", "Titi");
+        model.addAttribute("persons", persons);
+    System.out.println(persons);
+        return "person/details";
+}
+    @RequestMapping("/home/personvide")
+    public String personInfosVide(Model model){
+        model.addAttribute("firstname","Toto");
+        model.addAttribute("lastname","Titi");
+        List<String> persons = List.of();
+        model.addAttribute("persons",persons);
+        return "person/details";
+    }
+
+}
