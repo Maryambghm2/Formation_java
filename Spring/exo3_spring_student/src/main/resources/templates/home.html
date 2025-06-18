@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Bienvenue dans l'application Listage Étudiants :</h2>
+
+<th:block th:fragment="navbar">
+    <nav>
+        <a th:href="@{/students}">Voir liste étudiants</a> |
+        <a th:href="@{/new}">Ajouter un étudiant</a>
+    </nav>
+</th:block>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span th:replace="~{home :: navbar}"></span>
+
+
+<form method="post" th:action="@{new}" th:object="${newStudent}">
+    <input th:field="*{id}" type="hidden"/>
+    <div>
+        <label for="lastname">Nom : </label>
+        <input type="text" th:field="*{lastname}" id="lastname"/>
+    </div>
+    <div>
+        <label for="firstname">Prénom : </label>
+        <input type="text" th:field="*{firstname}" id="firstname"/>
+    </div>
+    <div>
+        <label for="age">Age : </label>
+        <input type="number" th:field="*{age}" id="age"/>
+    </div>
+    <div>
+        <label for="mail">Email : </label>
+        <input type="text" th:field="*{mail}" id="mail"/>
+    </div>
+    <button type="submit">Créer Étudiant</button>
+    <button type="reset">Annuler</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Résultat de la recherche</title>
+</head>
+<body>
+<h2>Résultat de la recherche</h2>
+<table th:if="${student != null}">
+    <thead>
+    <tr>#</tr>
+    <tr>Nom :</tr>
+    <tr>Prénom :</tr>
+    <tr>Age :</tr>
+    <tr>Email :</tr>
+    </thead>
+    <tbody>
+    <tr th:text="${student.getId()}"></tr>
+    <tr th:text="${student.getLastname()}"></tr>
+    <tr th:text="${student.getFirstname()}"></tr>
+    <tr th:text="${student.getAge()}"></tr>
+    <tr th:text="${student.getMail()}"></tr>
+    </tbody>
+</table>
+<p th:if="${student == null}">Pas d'étudiant avec cet id.</p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Affichages Liste étudiants</title>
+</head>
+<body>
+<h1>Liste Étudiants</h1>
+<span th:replace="~{home :: navbar}"></span>
+
+<div>
+    <button><a th:href="@{new}">Ajouter un élève</a></button>
+
+</div>
+<div>
+    <h3>Rechercher un Étudiant via son nom :</h3>
+    <form th:action="@{search}" method="get">
+        <input type="text" th:name="search"/>
+        <button>Rechercher</button>
+    </form>
+</div>
+
+
+<table th:if="${students != null}">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Nom :</th>
+        <th>Prénom :</th>
+     <th>Détail :</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="s : ${students}">
+        <th th:text="${s.id}"></th>
+        <th th:text="${s.lastname}"></th>
+        <th th:text="${s.firstname}"></th>
+        <td><a th:href="@{students/{id}(id=${s.getId()})}">Détail</a></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
