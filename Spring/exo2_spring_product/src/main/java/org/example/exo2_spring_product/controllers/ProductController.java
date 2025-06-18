@@ -1,7 +1,14 @@
 package org.example.exo2_spring_product.controllers;
 
+import org.example.exo2_spring_product.models.Product;
 import org.example.exo2_spring_product.services.ProductService;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import java.util.List;
+import java.util.UUID;
 
 @Controller
 public class ProductController {
@@ -24,9 +31,27 @@ public class ProductController {
     }
 
 
+ @GetMapping("/products")
+public String getProducts(Model model){
+     List<Product> products = productService.getAllProducts();
+     model.addAttribute("products", products);
+     // Retourner la page html ou requiper l'attribut
+     return "products";
+ }
 
+ @GetMapping("products/{id}")
+    public String getProductById(@PathVariable UUID id, Model model) {
+        Product product = productService.getById(id);
+        model.addAttribute("product", product);
+        return "product";
+ }
 
-
-
+ @GetMapping("products/categories/{categorie}")
+    public String getProductByCategorie(@PathVariable String categorie, Model model){
+        List<Product> products = productService.getByCategorie(categorie);
+        model.addAttribute("products", products);
+        model.addAttribute("categorie", categorie);
+        return "productFilter";
+ }
 
 }
