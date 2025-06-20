@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/add}" method="post" th:object="${person}">
+    <div>
+        <label for="firstname">Nom :</label>
+        <input type="text" th:field="*{firstname}" id="firstname"/>
+    </div>
+    <div>
+        <label for="lastname">Prénom :</label>
+        <input type="text" th:field="*{lastname}" id="lastname"/>
+    </div>
+    <div>
+        <label for="mail">Email :</label>
+        <input type="text" th:field="*{mail}" id="mail"/>
+    </div>
+    <button>Ajouter</button>
+</form>
+</body>
+</html>
