@@ -13,17 +13,14 @@ import org.example.tp_rest.entity.enums.TravelMode;
 @Data
 public class TravellogReceiveDto {
 
-    private long observationId;
-
     private double distanceKm;
 
     private TravelMode mode;
 
 
 
-    private Travellog dtoToEntity(Observation observation, double estimatedCo2Kg) {
+    public Travellog dtoToEntity() {
  Travellog travellog = Travellog.builder()
-                .observation(observation)
                 .distanceKm(getDistanceKm())
                 .mode(getMode())
                 .build();

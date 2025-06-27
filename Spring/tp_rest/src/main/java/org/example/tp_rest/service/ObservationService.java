@@ -23,11 +23,11 @@ public class ObservationService {
     }
 
     public ObservationResponseDto create(ObservationReceiveDto observation) {
-        //Specie specie = specieRepository.findById(observation.getSpecie()).orElseThrow(NotFoundException::new);
+        Specie specie = specieRepository.findById(observation.getSpecieId()).orElseThrow(NotFoundException::new);
 
-        //  Observation entity = observation.dtoToEntity(specie);
+          Observation entity = observation.dtoToEntity(specie);
 
-        return observationRepository.save(observation.dtoToEntity(specieRepository)).entityToDto();
+        return observationRepository.save(entity).entityToDto();
     }
 
     public List<ObservationResponseDto> getAll() {
@@ -38,7 +38,7 @@ public class ObservationService {
         return observationRepository.findById(id).orElseThrow(NotFoundException::new).entityToDto();
     }
 
-    public List<ObservationResponseDto> findBySpecie(long id) {
+    public List<ObservationResponseDto> findByIdSpecie(long id) {
         return observationRepository.findByIdSpecie(id).stream().map(Observation::entityToDto).toList();
     }
 

@@ -26,11 +26,11 @@ public class ObservationReceiveDto {
     private String comment;
 
 
-    public Observation dtoToEntity(SpecieRepository specieRepository) {
+    public Observation dtoToEntity(Specie specie) {
 
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
         return Observation.builder()
-                .specie(specieRepository.findById(getSpecieId()).orElseThrow(NotFoundException::new))
+                .specie(specie)
                 .observerName(getObserverName())
                 .location(getLocation())
                 .longitude(getLongitude())
