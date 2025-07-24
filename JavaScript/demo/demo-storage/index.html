@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le storage en JavaScript</title>
+</head>
+<body>
+    <h1>Le storage en JavaScript</h1>
+    <input id="pseudo" type="text">
+
+
+
+    <script>
+
+// Sauvegarde le pseudo entré dans un formulaire
+const input = document.getElementById("pseudo");
+
+input.addEventListener("input", () => {
+    localStorage.setItem("pseudo", input.value);
+})
+
+// Le recharger automatiquement à l'ouverture
+window.addEventListener("DOMContentLoaded", () => {
+    const saved = localStorage.getItem("pseudo");
+    if (saved) input.value = saved;
+})
+    </script>
+</body>
+</html>
