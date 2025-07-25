@@ -1,0 +1,3 @@
+JS  : 
+
+?? est l'opérateur de coalescence nulle : il prend la valeur à droite seulement si la valeur à gauche est null ou undefined.
