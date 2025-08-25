@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Présentation</h1>
+    <section>
+        <h2 class="red">Interpolation</h2>
+        <p>Nom : {{ name }}</p>
+        <p>1+1 = {{ 1+ 1}}</p>
+        <p>NOM : {{ name.toUpperCase()}}</p>
+        <p>{{ isLogged ? "Vous êtes connecté" : "Veuillez vous connecter"}}</p>
+    </section>
+
+    <section>
+        <h2>Data binding</h2>
+        <div>
+            <img src="m2i" alt="description">
+        </div>
+        <p [class]="isLogged ? 'red' : 'blue'">J'ai une classe dynamique</p>
+    </section>
+
+    <section>
+        <button (click)="toggleLogged()">{{ isLogged ? "Déconnexion" : "Connexion"}}</button>
+    </section>
+</body>
+
+</html>
